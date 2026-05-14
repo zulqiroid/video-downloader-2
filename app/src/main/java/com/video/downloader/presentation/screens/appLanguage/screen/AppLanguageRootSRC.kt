@@ -1,7 +1,8 @@
-package com.video.downloader.presentation.screens.splash.screen
+package com.video.downloader.presentation.screens.appLanguage.screen
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -10,32 +11,36 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
 import com.video.downloader.presentation.navigation.Screen
-import com.video.downloader.presentation.screens.splash.events.SplashNavEvents
-import com.video.downloader.presentation.screens.splash.viewModel.SplashViewModel
+import com.video.downloader.presentation.screens.appLanguage.events.AppLanguageNavEvents
+import com.video.downloader.presentation.screens.appLanguage.viewModel.AppLanguageViewModel
 
 @Composable
-fun SplashRootSRC(
+fun AppLanguageRootSRC(
     backStack: NavBackStack<NavKey>,
-    viewModel: SplashViewModel = hiltViewModel()
+    viewModel: AppLanguageViewModel = hiltViewModel<AppLanguageViewModel>()
 ) {
-    val state = viewModel.state.collectAsStateWithLifecycle()
+    val state by viewModel.state.collectAsStateWithLifecycle()
     val lifecycleOwner = LocalLifecycleOwner.current
 
     LaunchedEffect(viewModel, lifecycleOwner.lifecycle) {
         lifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
             viewModel.navEvents.collect { navEvent ->
                 when (navEvent) {
-                    SplashNavEvents.NavigateToMain -> {
+                    AppLanguageNavEvents.NavigateBack -> {
                         backStack.removeLastOrNull()
-                        backStack.add(Screen.AppLanguage)
+                    }
+
+                    AppLanguageNavEvents.NavigateToMain -> {
+                        backStack.removeLastOrNull()
+                        backStack.add(Screen.Main)
                     }
                 }
             }
         }
     }
 
-    SplashSRC(
-        state = state.value,
+    AppLanguageSRC(
+        state = state,
         onEvent = viewModel::onEvent
     )
 }
