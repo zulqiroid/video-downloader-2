@@ -5,4 +5,17 @@
     <string name="easily_download_videos_play"><![CDATA[Easily Download Videos & Play]]></string>
     <string name="get_started">Get Started</string>
     <string name="this_app_may_contains_ads">This app may contains ads</string>
+    <string name="english">English</string>
+    <string name="urdu">Urdu</string>
+    <string name="german">German</string>
+    <string name="hindi">Hindi</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="russian">Russian</string>
+    <string name="south_africa">South Africa</string>
+    <string name="persian">Persian</string>
+    <string name="italic">Italic</string>
+    <string name="apply_language">Apply Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="search_language">Search language...</string>
 </resources>
