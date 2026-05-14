@@ -32,7 +32,7 @@ fun AppLanguageRootSRC(
 
                     AppLanguageNavEvents.NavigateToMain -> {
                         backStack.removeLastOrNull()
-                        backStack.add(Screen.Main)
+                        backStack.add(Screen.Onboarding)
                     }
                 }
             }

@@ -18,4 +18,16 @@
     <string name="apply_language">Apply Language</string>
     <string name="select_language">Select Language</string>
     <string name="search_language">Search language...</string>
+    <string name="unlimited_downloads">Unlimited Downloads</string>
+    <string name="save_videos_from_all_your_favorite_platforms_without_limits">Save videos from all your favorite platforms without limits.</string>
+    <string name="discover_and_download_the_latest_trending_reels_instantly">Discover and download the latest trending reels instantly.</string>
+    <string name="trending_reels">Trending Reels</string>
+    <string name="play_your_downloads_offline_with_a_reels_like_built_in_player">Play your downloads offline with a reels like built‑in player</string>
+    <string name="built_in_player">Built-in Player</string>
+    <string name="private_vault">Private Vault</string>
+    <string name="protect_your_downloads_with_pin_or_biometric_security">Protect your downloads with PIN or biometric security.</string>
+    <string name="skip">Skip</string>
+    <string name="continue_text">Continue</string>
+    <string name="next">Next</string>
+    <string name="user_friendly_download_engine">User friendly download engine.</string>
 </resources>

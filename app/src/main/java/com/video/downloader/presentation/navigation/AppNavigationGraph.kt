@@ -8,6 +8,7 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import com.video.downloader.presentation.screens.appLanguage.screen.AppLanguageRootSRC
+import com.video.downloader.presentation.screens.onboarding.screen.OnboardingRootSRC
 import com.video.downloader.presentation.screens.splash.screen.SplashRootSRC
 
 
@@ -28,6 +29,10 @@ fun AppNavigationGraph() {
 
             entry<Screen.AppLanguage> {
                 AppLanguageRootSRC(backStack = backStack)
+            }
+
+            entry<Screen.Onboarding> {
+                OnboardingRootSRC(backStack = backStack)
             }
 
             entry<Screen.Main> {

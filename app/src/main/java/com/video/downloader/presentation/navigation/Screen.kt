@@ -13,5 +13,8 @@ sealed interface Screen : NavKey {
     data object AppLanguage : Screen
 
     @Serializable
+    data object Onboarding : Screen
+
+    @Serializable
     data object Main : Screen
 }

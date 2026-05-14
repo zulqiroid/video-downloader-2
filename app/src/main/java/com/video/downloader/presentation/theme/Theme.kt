@@ -32,6 +32,12 @@ object AppGradients {
             AppColors.backgroundGradientDown
         )
     )
+    val dummy = Brush.verticalGradient(
+        colors = listOf(
+            AppColors.BackgroundDisabled,
+            AppColors.BackgroundDisabled
+        )
+    )
 }
 
 /**

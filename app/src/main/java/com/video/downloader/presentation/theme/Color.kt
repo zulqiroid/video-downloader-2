@@ -17,6 +17,7 @@ object AppColors {
      * Base
      */
     val Background = Color(0xFFFFFFFF)
+    val BackgroundDisabled = Color(0xFFF4F4F5)
     val backgroundGradientTop = Color(0xFFD895FF)
     val backgroundGradientDown = Color(0xFFFFB7EF)
 
