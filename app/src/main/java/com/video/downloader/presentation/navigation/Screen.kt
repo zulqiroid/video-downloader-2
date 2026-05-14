@@ -8,6 +8,9 @@ import kotlinx.serialization.Serializable
 sealed interface Screen : NavKey{
 
     @Serializable
+    data object Splash : Screen
+
+    @Serializable
     data object Main : Screen
 
 }

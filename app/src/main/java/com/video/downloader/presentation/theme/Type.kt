@@ -153,6 +153,11 @@ val AppTypography = Typography(
  */
 object AppTextStyles {
 
+    val bodyMedium = appTextStyle(
+        fontWeight = FontWeight.W500,
+            fontSize = 16,
+        lineHeight = 18
+    )
     val splashTitle = appTextStyle(
         fontWeight = FontWeight.ExtraBold,
         fontSize = 34,
@@ -191,7 +196,7 @@ object AppTextStyles {
 
     val buttonLarge = appTextStyle(
         fontWeight = FontWeight.Bold,
-        fontSize = 16,
+        fontSize = 18,
         lineHeight = 24
     )
 
