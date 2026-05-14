@@ -25,6 +25,13 @@ object AppGradients {
             AppColors.HighlightGradientBottom
         )
     )
+
+    val SplashBackground = Brush.verticalGradient(
+        colors = listOf(
+            AppColors.backgroundGradientTop,
+            AppColors.backgroundGradientDown
+        )
+    )
 }
 
 /**

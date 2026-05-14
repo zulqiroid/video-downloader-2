@@ -17,6 +17,8 @@ object AppColors {
      * Base
      */
     val Background = Color(0xFFFFFFFF)
+    val backgroundGradientTop = Color(0xFFD895FF)
+    val backgroundGradientDown = Color(0xFFFFB7EF)
 
     /**
      * Highlight Gradient
