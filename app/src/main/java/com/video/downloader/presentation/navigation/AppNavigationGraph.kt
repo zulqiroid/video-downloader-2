@@ -1,6 +1,5 @@
 package com.video.downloader.presentation.navigation
 
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.navigation3.rememberViewModelStoreNavEntryDecorator
 import androidx.navigation3.runtime.entryProvider
@@ -11,6 +10,7 @@ import com.video.downloader.presentation.screens.appLanguage.screen.AppLanguageR
 import com.video.downloader.presentation.screens.downloadGuide.screen.DownloadGuideRootSRC
 import com.video.downloader.presentation.screens.main.screen.MainRootSRC
 import com.video.downloader.presentation.screens.onboarding.screen.OnboardingRootSRC
+import com.video.downloader.presentation.screens.platformDetail.screen.PlatformDetailRootSRC
 import com.video.downloader.presentation.screens.splash.screen.SplashRootSRC
 
 
@@ -45,6 +45,13 @@ fun AppNavigationGraph() {
 
             entry<Screen.DownloadGuide> {
                 DownloadGuideRootSRC(backStack = backStack)
+            }
+
+            entry<Screen.PlatformDetail> { platformDetail ->
+                PlatformDetailRootSRC(
+                    backStack = backStack,
+                    platform = platformDetail.platform
+                )
             }
         }
     )

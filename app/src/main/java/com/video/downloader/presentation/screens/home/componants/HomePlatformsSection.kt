@@ -28,6 +28,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.video.downloader.R
+import com.video.downloader.domain.models.Platforms
 import com.video.downloader.presentation.common.haptics.AppHapticType
 import com.video.downloader.presentation.common.haptics.hapticClickable
 import com.video.downloader.presentation.common.haptics.rememberAppHapticFeedback
@@ -38,8 +39,8 @@ import com.video.downloader.presentation.theme.AppTextStyles
 
 @Composable
 fun HomePlatformsSection(
-    platforms: List<HomePlatformUiModel>,
-    onPlatformClick: (HomePlatformUiModel) -> Unit,
+    platforms: List<Platforms>,
+    onPlatformClick: (Platforms) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -76,7 +77,7 @@ fun HomePlatformsSection(
 
 @Composable
 private fun HomePlatformItem(
-    platform: HomePlatformUiModel,
+    platform: Platforms,
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -111,7 +112,7 @@ private fun HomePlatformItem(
 
 @Composable
 private fun PlatformIconContainer(
-    platform: HomePlatformUiModel,
+    platform: Platforms,
     modifier: Modifier = Modifier
 ) {
     val containerShape = RoundedCornerShape(28.dp)

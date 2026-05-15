@@ -2,6 +2,7 @@ package com.video.downloader.presentation.screens.home.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.video.downloader.domain.models.Platforms
 import com.video.downloader.presentation.screens.home.events.HomeEvents
 import com.video.downloader.presentation.screens.home.events.HomeNavEvents
 import com.video.downloader.presentation.screens.home.states.HomeStates
@@ -35,7 +36,7 @@ class HomeViewModel @Inject constructor() : ViewModel() {
             HomeEvents.DownloadClicked -> onDownloadClicked()
 
             HomeEvents.WatchTrendingReelsClicked -> onWatchTrendingReelsClicked()
-            is HomeEvents.PlatformClicked -> onPlatformClicked(event.platformId)
+            is HomeEvents.PlatformClicked -> onPlatformClicked(event.platform)
             is HomeEvents.FeatureClicked -> {}
             HomeEvents.HowToDownloadVideosClicked -> {
                 viewModelScope.launch {
@@ -49,9 +50,14 @@ class HomeViewModel @Inject constructor() : ViewModel() {
         // Later: emit NavEvent or notify Main screen to switch selected tab to Reels.
     }
 
-    private fun onPlatformClicked(platformId: String) {
-        // Later: open platform-specific downloader flow.
-        // Example: TikTok, Facebook, Instagram, Likee, etc.
+    private fun onPlatformClicked(platform: Platforms) {
+        viewModelScope.launch {
+            _navEvents.emit(
+                HomeNavEvents.NavigateToPlatformDetail(
+                    platform = platform
+                )
+            )
+        }
     }
 
     private fun onVideoUrlChanged(value: String) {

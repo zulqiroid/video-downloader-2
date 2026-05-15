@@ -105,7 +105,7 @@ fun HomeSRC(
                 onPlatformClick = { platform ->
                     onEvent(
                         HomeEvents.PlatformClicked(
-                            platformId = platform.id
+                            platform = platform
                         )
                     )
                 },

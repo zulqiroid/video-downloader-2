@@ -1,5 +1,6 @@
 package com.video.downloader.presentation.screens.home.events
 
+import com.video.downloader.domain.models.Platforms
 import com.video.downloader.presentation.screens.home.states.HomeFeatures
 
 sealed interface HomeEvents {
@@ -17,7 +18,7 @@ sealed interface HomeEvents {
     data object WatchTrendingReelsClicked : HomeEvents
 
     data class PlatformClicked(
-        val platformId: String
+        val platform: Platforms
     ) : HomeEvents
 
     data class FeatureClicked(
