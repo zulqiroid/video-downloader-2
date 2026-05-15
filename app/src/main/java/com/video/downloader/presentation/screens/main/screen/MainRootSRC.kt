@@ -17,7 +17,9 @@ fun MainRootSRC(
     val state by viewModel.state.collectAsStateWithLifecycle()
 
 
+
     MainSRC(
+        backStack = backStack,
         state = state,
         viewModel = viewModel
     )

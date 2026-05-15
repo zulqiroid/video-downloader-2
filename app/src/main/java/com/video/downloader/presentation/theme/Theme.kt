@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
@@ -30,6 +31,18 @@ object AppGradients {
         colors = listOf(
             AppColors.backgroundGradientTop,
             AppColors.backgroundGradientDown
+        )
+    )
+    val PremiumChipBG = Brush.horizontalGradient(
+        colors = listOf(
+            AppColors.premiumBackgroundGradientLeft,
+            AppColors.premiumBackgroundGradientRight
+        )
+    )
+    val ReelWatchCardBG = Brush.verticalGradient(
+        colors = listOf(
+            Color(0xFFFFF0FC),
+            Color(0xFFF9E5FF),
         )
     )
     val dummy = Brush.verticalGradient(

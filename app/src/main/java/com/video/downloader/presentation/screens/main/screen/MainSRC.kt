@@ -12,6 +12,7 @@ import androidx.compose.animation.togetherWith
  import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
@@ -21,6 +22,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.navigation3.runtime.NavBackStack
+import androidx.navigation3.runtime.NavKey
+import com.video.downloader.presentation.screens.home.screen.HomeRootSRC
 import com.video.downloader.presentation.screens.main.componants.MainBottomNavBar
 import com.video.downloader.presentation.screens.main.events.MainEvents
 import com.video.downloader.presentation.screens.main.states.BottomNavItems
@@ -32,6 +36,7 @@ import com.video.downloader.presentation.theme.AppColors
 fun MainSRC(
     state: MainStates,
     viewModel: MainViewModel,
+    backStack: NavBackStack<NavKey>,
 ) {
     Scaffold(
         containerColor = AppColors.Background,
@@ -56,7 +61,6 @@ fun MainSRC(
             targetState = state.selectedTab,
             modifier = Modifier
                 .fillMaxSize()
-                .padding(paddingValues)
                 .background(AppColors.Background),
             transitionSpec = {
                 val initialTabIndex = initialState.tabIndex()
@@ -121,6 +125,8 @@ fun MainSRC(
             label = "MainTabContentAnimation"
         ) { selectedTab ->
             MainTabContent(
+                paddingValues = paddingValues,
+                backStack = backStack,
                 selectedTab = selectedTab,
                 modifier = Modifier.fillMaxSize()
             )
@@ -130,6 +136,8 @@ fun MainSRC(
 
 @Composable
 private fun MainTabContent(
+    paddingValues: PaddingValues,
+    backStack: NavBackStack<NavKey>,
     selectedTab: BottomNavItems,
     modifier: Modifier = Modifier
 ) {
@@ -139,7 +147,10 @@ private fun MainTabContent(
     ) {
         when (selectedTab) {
             BottomNavItems.Home -> {
-                Text(text = "Home screen")
+                HomeRootSRC(
+                    mainPaddingValues = paddingValues,
+                    backStack = backStack,
+                )
             }
 
             BottomNavItems.Player -> {
