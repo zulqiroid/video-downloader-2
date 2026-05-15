@@ -66,4 +66,8 @@
     <string name="download_description">Tap the download button and save the media directly to your device.</string>
 
     <string name="try_now">Try Now</string>
+    <string name="download_video">Download Video</string>
+    <string name="no_trending_videos">No Trending Videos</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="see_all">See All</string>
 </resources>

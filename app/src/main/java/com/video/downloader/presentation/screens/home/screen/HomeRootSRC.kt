@@ -31,6 +31,13 @@ fun HomeRootSRC(
                 HomeNavEvents.NavigateToDownloadGuide -> {
                     backStack.add(Screen.DownloadGuide)
                 }
+                is HomeNavEvents.NavigateToPlatformDetail -> {
+                    backStack.add(
+                        Screen.PlatformDetail(
+                            platform= navEvent.platform
+                        )
+                    )
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 package com.video.downloader.presentation.navigation
 
 import androidx.navigation3.runtime.NavKey
+import com.video.downloader.domain.models.Platforms
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -20,4 +21,9 @@ sealed interface Screen : NavKey {
 
     @Serializable
     data object DownloadGuide : Screen
+
+    @Serializable
+    data class PlatformDetail(
+        val platform: Platforms
+    ) : Screen
 }
