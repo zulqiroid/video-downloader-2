@@ -2,6 +2,7 @@ package com.video.downloader.presentation.screens.home.screen
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalClipboard
 import androidx.compose.ui.platform.LocalClipboardManager
@@ -9,7 +10,9 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
+import com.video.downloader.presentation.navigation.Screen
 import com.video.downloader.presentation.screens.home.events.HomeEvents
+import com.video.downloader.presentation.screens.home.events.HomeNavEvents
 import com.video.downloader.presentation.screens.home.viewModel.HomeViewModel
 
 
@@ -21,6 +24,16 @@ fun HomeRootSRC(
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val clipboardManager = LocalClipboard.current
+
+    LaunchedEffect(viewModel.navEvents) {
+        viewModel.navEvents.collect { navEvent ->
+            when (navEvent) {
+                HomeNavEvents.NavigateToDownloadGuide -> {
+                    backStack.add(Screen.DownloadGuide)
+                }
+            }
+        }
+    }
 
     HomeSRC(
         mainPaddingValues = mainPaddingValues,

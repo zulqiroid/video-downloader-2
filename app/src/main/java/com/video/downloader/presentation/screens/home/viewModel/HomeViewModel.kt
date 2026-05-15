@@ -3,11 +3,14 @@ package com.video.downloader.presentation.screens.home.viewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.video.downloader.presentation.screens.home.events.HomeEvents
+import com.video.downloader.presentation.screens.home.events.HomeNavEvents
 import com.video.downloader.presentation.screens.home.states.HomeStates
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -18,6 +21,10 @@ class HomeViewModel @Inject constructor() : ViewModel() {
 
     private val _state = MutableStateFlow(HomeStates())
     val state: StateFlow<HomeStates> = _state.asStateFlow()
+
+    private val _navEvents  = MutableSharedFlow<HomeNavEvents>()
+    val navEvents = _navEvents.asSharedFlow()
+
 
     fun onEvent(event: HomeEvents) {
         when (event) {
@@ -30,6 +37,11 @@ class HomeViewModel @Inject constructor() : ViewModel() {
             HomeEvents.WatchTrendingReelsClicked -> onWatchTrendingReelsClicked()
             is HomeEvents.PlatformClicked -> onPlatformClicked(event.platformId)
             is HomeEvents.FeatureClicked -> {}
+            HomeEvents.HowToDownloadVideosClicked -> {
+                viewModelScope.launch {
+                    _navEvents.emit(HomeNavEvents.NavigateToDownloadGuide)
+                }
+            }
         }
     }
 
