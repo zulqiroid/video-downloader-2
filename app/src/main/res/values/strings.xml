@@ -54,4 +54,16 @@
     <string name="video_splitter">Video Splitter</string>
     <string name="screen_casting">Screen Casting</string>
     <string name="video_to_mp3">Video to mp3</string>
+
+     <string name="download_guide_subtitle">Follow these 3 simple steps to save your favorite content in high quality.</string>
+
+    <string name="copy_link">Copy Link</string>
+    <string name="copy_link_description">Find the video you want to save and copy its URL from the share menu.</string>
+
+    <string name="paste_link">Paste Link</string>
+    <string name="paste_link_description">Return to this app and paste the copied link into the input field.</string>
+
+    <string name="download_description">Tap the download button and save the media directly to your device.</string>
+
+    <string name="try_now">Try Now</string>
 </resources>

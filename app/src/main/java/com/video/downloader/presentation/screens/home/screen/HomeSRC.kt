@@ -118,7 +118,7 @@ fun HomeSRC(
                 modifier = Modifier.fillMaxWidth(),
                 text = stringResource(R.string.how_to_download_videos),
                 onClick = {
-
+                    onEvent(HomeEvents.HowToDownloadVideosClicked)
                 },
                 leadingIcon = {
                     Image(

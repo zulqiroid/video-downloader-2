@@ -23,4 +23,6 @@ sealed interface HomeEvents {
     data class FeatureClicked(
         val feature: HomeFeatures
     ) : HomeEvents
+
+    data object HowToDownloadVideosClicked : HomeEvents
 }
