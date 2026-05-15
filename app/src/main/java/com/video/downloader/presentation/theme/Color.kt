@@ -21,6 +21,9 @@ object AppColors {
     val backgroundGradientTop = Color(0xFFD895FF)
     val backgroundGradientDown = Color(0xFFFFB7EF)
 
+    val premiumBackgroundGradientLeft = Color(0xFFFE9A00)
+    val premiumBackgroundGradientRight = Color(0xFFFFB900)
+
     /**
      * Highlight Gradient
      *

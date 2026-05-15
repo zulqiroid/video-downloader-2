@@ -43,7 +43,7 @@ private fun appTextStyle(
     fontWeight: FontWeight,
     fontSize: Int,
     lineHeight: Int,
-    letterSpacing: Double = 0.0
+    letterSpacing: Double = 0.0,
 ): TextStyle {
     return TextStyle(
         fontFamily = PlusJakartaSans,
@@ -184,7 +184,7 @@ object AppTextStyles {
 
     val bodyMedium = appTextStyle(
         fontWeight = FontWeight.W500,
-            fontSize = 16,
+        fontSize = 16,
         lineHeight = 18
     )
 

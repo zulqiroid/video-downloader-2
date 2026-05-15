@@ -35,4 +35,23 @@
     <string name="reels">Reels</string>
     <string name="files">Files</string>
     <string name="vault">Vault</string>
+    <string name="pro">PRO</string>
+    <string name="paste">Paste</string>
+    <string name="download">Download</string>
+    <string name="paste_video_link_here">Paste video link here...</string>
+    <string name="watch_trending_reels">Watch Trending Reels</string>
+    <string name="discover_the_latest_viral_shorts">Discover the latest viral shorts.</string>
+    <string name="tokitok">TokiTok</string>
+    <string name="fesbuk">Fesbuk</string>
+    <string name="intgame">Intgame</string>
+    <string name="likeir">Likeir</string>
+    <string name="dailymutin">Dailymutin</string>
+    <string name="thireds">Thireds</string>
+    <string name="pinitrust">Pinitrust</string>
+    <string name="twetzer">Twetzer</string>
+    <string name="platforms">Platforms</string>
+    <string name="how_to_download_videos">How to Download Videos</string>
+    <string name="video_splitter">Video Splitter</string>
+    <string name="screen_casting">Screen Casting</string>
+    <string name="video_to_mp3">Video to mp3</string>
 </resources>

@@ -1,7 +1,9 @@
 package com.video.downloader.presentation.common.componants
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
@@ -31,6 +33,8 @@ fun AppGradientButton(
     enabled: Boolean = true,
     isLoading: Boolean = false,
     buttonHeight: Dp = 60.dp,
+    leadingIcon: @Composable (() -> Unit)? = null,
+    trailingIcon: @Composable (() -> Unit)? = null,
     hapticType: AppHapticType = AppHapticType.Confirm
 ) {
     val shape = RoundedCornerShape(16.dp)
@@ -74,12 +78,29 @@ fun AppGradientButton(
                 color = AppColors.OnHighlight
             )
         } else {
-            Text(
-                text = text,
-                style = AppTextStyles.buttonLarge,
-                color = if (enabled) AppColors.OnHighlight else AppColors.TextDisabled,
-                textAlign = TextAlign.Center
-            )
+
+            Row(
+                modifier = Modifier,
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+
+                leadingIcon?.let {
+                    leadingIcon()
+                }
+
+                Text(
+                    text = text,
+                    style = AppTextStyles.buttonLarge,
+                    color = if (enabled) AppColors.OnHighlight else AppColors.TextDisabled,
+                    textAlign = TextAlign.Center
+                )
+
+                trailingIcon?.let {
+                    trailingIcon()
+                }
+
+            }
         }
     }
 }
