@@ -26,4 +26,6 @@ sealed interface HomeEvents {
     ) : HomeEvents
 
     data object HowToDownloadVideosClicked : HomeEvents
+
+    data object SettingClicked : HomeEvents
 }

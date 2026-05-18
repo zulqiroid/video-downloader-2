@@ -43,6 +43,12 @@ class HomeViewModel @Inject constructor() : ViewModel() {
                     _navEvents.emit(HomeNavEvents.NavigateToDownloadGuide)
                 }
             }
+
+            HomeEvents.SettingClicked -> {
+                viewModelScope.launch {
+                    _navEvents.emit(HomeNavEvents.NavigateToMore)
+                }
+            }
         }
     }
 

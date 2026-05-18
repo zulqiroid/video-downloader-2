@@ -11,6 +11,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
 import com.video.downloader.presentation.navigation.Screen
+import com.video.downloader.presentation.navigation.Screen.*
 import com.video.downloader.presentation.screens.home.events.HomeEvents
 import com.video.downloader.presentation.screens.home.events.HomeNavEvents
 import com.video.downloader.presentation.screens.home.viewModel.HomeViewModel
@@ -33,10 +34,14 @@ fun HomeRootSRC(
                 }
                 is HomeNavEvents.NavigateToPlatformDetail -> {
                     backStack.add(
-                        Screen.PlatformDetail(
+                        PlatformDetail(
                             platform= navEvent.platform
                         )
                     )
+                }
+
+                HomeNavEvents.NavigateToMore ->{
+                    backStack.add(Screen.More)
                 }
             }
         }
