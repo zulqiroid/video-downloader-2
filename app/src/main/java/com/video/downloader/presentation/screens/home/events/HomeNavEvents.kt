@@ -10,4 +10,5 @@ sealed interface HomeNavEvents {
         val platform: Platforms
     ) : HomeNavEvents
 
+    object NavigateToMore : HomeNavEvents
 }

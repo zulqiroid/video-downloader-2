@@ -26,4 +26,7 @@ sealed interface Screen : NavKey {
     data class PlatformDetail(
         val platform: Platforms
     ) : Screen
+
+    @Serializable
+    data object More : Screen
 }

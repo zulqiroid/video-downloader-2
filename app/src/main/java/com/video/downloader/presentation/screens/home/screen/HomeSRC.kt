@@ -57,7 +57,13 @@ fun HomeSRC(
                 Spacer(
                     modifier = Modifier.windowInsetsTopHeight(WindowInsets.statusBars)
                 )
-                HomeTopBar()
+                HomeTopBar(
+                    onSettingCLicked = {
+                        onEvent(
+                            HomeEvents.SettingClicked
+                        )
+                    }
+                )
 
             }
         }

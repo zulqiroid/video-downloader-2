@@ -9,6 +9,7 @@ import androidx.navigation3.ui.NavDisplay
 import com.video.downloader.presentation.screens.appLanguage.screen.AppLanguageRootSRC
 import com.video.downloader.presentation.screens.downloadGuide.screen.DownloadGuideRootSRC
 import com.video.downloader.presentation.screens.main.screen.MainRootSRC
+import com.video.downloader.presentation.screens.more.screen.MoreRootSRC
 import com.video.downloader.presentation.screens.onboarding.screen.OnboardingRootSRC
 import com.video.downloader.presentation.screens.platformDetail.screen.PlatformDetailRootSRC
 import com.video.downloader.presentation.screens.splash.screen.SplashRootSRC
@@ -52,6 +53,11 @@ fun AppNavigationGraph() {
                     backStack = backStack,
                     platform = platformDetail.platform
                 )
+            }
+            entry<Screen.More> {
+                MoreRootSRC(
+                    backStack = backStack,
+                 )
             }
         }
     )

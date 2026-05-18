@@ -70,4 +70,15 @@
     <string name="no_trending_videos">No Trending Videos</string>
     <string name="trending_now">Trending Now</string>
     <string name="see_all">See All</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="rate_us">Rate us</string>
+    <string name="share_app">Share App</string>
+    <string name="download_location">Download Location</string>
+    <string name="downloads_videosaver">/Downloads/VideoSaver</string>
+    <string name="notifications">Notifications</string>
+    <string name="download_guide">Download Guide</string>
+    <string name="general">General</string>
+    <string name="downloads_storage"><![CDATA[DOWNLOADS & STORAGE]]></string>
+    <string name="support">SUPPORT</string>
 </resources>
