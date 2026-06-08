@@ -12,6 +12,7 @@ import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
 import com.video.downloader.presentation.navigation.Screen
 import com.video.downloader.presentation.screens.appLanguage.events.AppLanguageNavEvents
+import com.video.downloader.presentation.screens.onboarding.events.OnboardingEvents
 import com.video.downloader.presentation.screens.onboarding.events.OnboardingNavEvents
 import com.video.downloader.presentation.screens.onboarding.viewModel.OnboardingViewModel
 
@@ -23,14 +24,24 @@ fun OnboardingRootSRC(
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
+    LaunchedEffect(viewModel.navEvents) {
+        viewModel.navEvents.collect {
+            when(it){
+                 OnboardingNavEvents.NavigateToMain -> {
+                     backStack.removeAll(backStack)
+                     backStack.add(Screen.Main)
+                 }
+                else -> Unit
+             }
+        }
+    }
 
     OnboardingSRC(
         state = state,
         onEvent = viewModel::onEvent,
         effectFlow = viewModel.navEvents,
         onFinished = {
-            backStack.removeAll(backStack)
-            backStack.add(Screen.Main)
+            viewModel.onEvent(OnboardingEvents.FinishOnBoarding)
         }
     )
 

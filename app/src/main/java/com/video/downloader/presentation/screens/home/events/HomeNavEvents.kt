@@ -11,4 +11,12 @@ sealed interface HomeNavEvents {
     ) : HomeNavEvents
 
     object NavigateToMore : HomeNavEvents
+
+    object NavigateToWatchReels : HomeNavEvents
+
+    data object NavigateToVideoToMp3 : HomeNavEvents
+
+    data object NavigateToVideoSplitter : HomeNavEvents
+
+    data object NavigateToScreenCasting : HomeNavEvents
 }

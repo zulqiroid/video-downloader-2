@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
@@ -42,6 +43,7 @@ fun AppOutlinedButton(
     borderBrush: Brush? = null,
     textColor: Color? = null,
     textBrush: Brush? = null,
+    buttonShape: Shape =  RoundedCornerShape(16.dp),
     backgroundColor: Color = Color.Transparent,
     disabledBorderColor: Color = AppColors.DisabledContainer,
     disabledTextColor: Color = AppColors.TextDisabled,
@@ -76,13 +78,13 @@ fun AppOutlinedButton(
                     Modifier.gradientBorder(
                         width = borderWidth,
                         brush = resolvedBorderBrush,
-                        shape = ButtonDefaults.outlinedShape
+                        shape = buttonShape
                     )
                 } else {
                     Modifier
                 }
             ),
-        shape = ButtonDefaults.outlinedShape,
+        shape = buttonShape,
         border = when {
             !enabled -> BorderStroke(borderWidth, disabledBorderColor)
             resolvedBorderBrush != null -> null

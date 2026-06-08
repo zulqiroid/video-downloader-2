@@ -250,7 +250,6 @@ private fun HomeDownloadButton(
         text = text,
         onClick = onClick,
         modifier = modifier,
-        enabled = !isLoading,
         isLoading = isLoading,
         buttonHeight = 60.dp,
         leadingIcon = {
@@ -260,52 +259,6 @@ private fun HomeDownloadButton(
         },
         hapticType = AppHapticType.Click
     )
-
-   /* Row(
-        modifier = modifier
-            .defaultMinSize(minHeight = 56.dp)
-            .clip(shape)
-            .background(
-                brush = AppGradients.HighlightVertical,
-                shape = shape
-            )
-            .hapticClickable(
-                hapticFeedback = hapticFeedback,
-                enabled = !isLoading,
-                hapticType = AppHapticType.Confirm,
-                role = Role.Button,
-                onClick = onClick
-            )
-            .padding(horizontal = 14.dp),
-        horizontalArrangement = Arrangement.Center,
-        verticalAlignment = Alignment.CenterVertically
-    )
-    {
-        if (isLoading) {
-            CircularProgressIndicator(
-                modifier = Modifier.size(22.dp),
-                strokeWidth = 2.dp,
-                color = AppColors.OnHighlight
-            )
-        } else {
-            DownloadIcon(
-                modifier = Modifier.size(28.dp)
-            )
-
-            Spacer(modifier = Modifier.size(12.dp))
-
-            Text(
-                text = text,
-                style = AppTextStyles.buttonLarge.copy(
-                    fontSize = 23.sp,
-                    fontWeight = FontWeight.ExtraBold
-                ),
-                color = AppColors.OnHighlight,
-                textAlign = TextAlign.Center,
-                maxLines = 1
-            )
-        }
-    }*/
 }
 
 

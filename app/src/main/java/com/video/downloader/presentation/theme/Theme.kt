@@ -51,6 +51,12 @@ object AppGradients {
             AppColors.BackgroundDisabled
         )
     )
+    val dummy2 = Brush.verticalGradient(
+        colors = listOf(
+            AppColors.TextDisabled,
+            AppColors.TextDisabled
+        )
+    )
 }
 
 /**
@@ -103,7 +109,7 @@ val AppShapes = Shapes(
     small = RoundedCornerShape(8.dp),
     medium = RoundedCornerShape(12.dp),
     large = RoundedCornerShape(16.dp),
-    extraLarge = RoundedCornerShape(24.dp)
+    extraLarge = RoundedCornerShape(40.dp),
 )
 
 object AppCornerRadius {

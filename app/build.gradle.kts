@@ -15,6 +15,12 @@ android {
         }
     }
 
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+        }
+    }
+
     defaultConfig {
         applicationId = "com.video.downloader"
         minSdk = 24
@@ -23,6 +29,24 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags += "-std=c++17"
+            }
+        }
+
+        buildConfigField(
+            type = "String",
+            name = "DOWNLOADER_BASE_URL",
+            value = "\"https://testingdownloader.totalfreeai.com/\""
+        )
+
+        buildConfigField(
+            type = "String",
+            name = "DOWNLOADER_SECRET_KEY",
+            value = "\"I3V1T9kAd7iD0jg7ITqQLgjcZC1Nv7cyO3WZILtHsYhXVumkPj\""
+        )
     }
 
     buildTypes {
@@ -48,6 +72,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     packaging {
@@ -94,6 +119,7 @@ dependencies {
      * Dependency Injection - Hilt
      */
     implementation(libs.hilt.android)
+    implementation(libs.material)
     ksp(libs.hilt.compiler)
 
     /**
@@ -184,5 +210,20 @@ dependencies {
      * extended icons
      */
     implementation("androidx.compose.material:material-icons-extended")
+
+    /**
+    * coil
+     */
+    implementation("io.coil-kt:coil-compose:2.7.0")
+    implementation("io.coil-kt:coil-video:2.7.0")
+
+
+    implementation(libs.androidx.biometric)
+
+
+    implementation(libs.androidx.fragment.ktx)
+
+
+    implementation(libs.androidx.documentfile)
 
 }

@@ -12,4 +12,6 @@ data class SplashStates(
     val leftColumnImages: List<SplashImageItem> = SplashImages.leftColumn,
     val middleColumnImages: List<SplashImageItem> = SplashImages.middleColumn,
     val rightColumnImages: List<SplashImageItem> = SplashImages.rightColumn,
+
+    val isOnBoardingCompleted: Boolean = false,
 )

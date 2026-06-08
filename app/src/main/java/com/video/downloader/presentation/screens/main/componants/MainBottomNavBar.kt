@@ -94,7 +94,7 @@ fun MainBottomNavBar(
                     BottomNavItems.Reels -> {
                         Column(
                             modifier = Modifier
-                                .weight(1f)
+                                .weight(1.2f)
                                 .then(
                                     if (selected) {
                                         Modifier.dropShadow(
@@ -156,7 +156,7 @@ fun MainBottomNavBar(
                     else -> {
                         Column(
                             modifier = Modifier
-                                .weight(1f)
+                                .weight(0.8f)
                                 .hapticClickable(
                                     hapticFeedback = hapticFeedback,
                                     hapticType = if (selected) {

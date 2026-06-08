@@ -21,7 +21,8 @@ import com.video.downloader.presentation.screens.home.viewModel.HomeViewModel
 fun HomeRootSRC(
     backStack: NavBackStack<NavKey>,
     viewModel: HomeViewModel = hiltViewModel<HomeViewModel>(),
-    mainPaddingValues: PaddingValues
+    mainPaddingValues: PaddingValues,
+    toWatchReelsTriggered: () -> Unit
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val clipboardManager = LocalClipboard.current
@@ -30,7 +31,7 @@ fun HomeRootSRC(
         viewModel.navEvents.collect { navEvent ->
             when (navEvent) {
                 HomeNavEvents.NavigateToDownloadGuide -> {
-                    backStack.add(Screen.DownloadGuide)
+                    backStack.add(DownloadGuide)
                 }
                 is HomeNavEvents.NavigateToPlatformDetail -> {
                     backStack.add(
@@ -41,7 +42,20 @@ fun HomeRootSRC(
                 }
 
                 HomeNavEvents.NavigateToMore ->{
-                    backStack.add(Screen.More)
+                    backStack.add(More)
+                }
+
+                HomeNavEvents.NavigateToWatchReels -> {
+                    toWatchReelsTriggered()
+                }
+                HomeNavEvents.NavigateToVideoToMp3 -> {
+                    backStack.add(Screen.VideoToMp3)
+                }
+                HomeNavEvents.NavigateToVideoSplitter -> {
+                    backStack.add(Screen.VideoSplitter)
+                }
+                HomeNavEvents.NavigateToScreenCasting -> {
+                    backStack.add(Screen.ScreenCasting)
                 }
             }
         }

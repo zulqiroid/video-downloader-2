@@ -1,5 +1,7 @@
 package com.video.downloader.presentation.screens.main.screen
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.SizeTransform
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -16,20 +18,23 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
+import com.video.downloader.presentation.navigation.Screen
+import com.video.downloader.presentation.screens.download.screen.DownloadRootSRC
 import com.video.downloader.presentation.screens.home.screen.HomeRootSRC
 import com.video.downloader.presentation.screens.main.componants.MainBottomNavBar
 import com.video.downloader.presentation.screens.main.events.MainEvents
 import com.video.downloader.presentation.screens.main.states.BottomNavItems
 import com.video.downloader.presentation.screens.main.states.MainStates
 import com.video.downloader.presentation.screens.main.viewModel.MainViewModel
+import com.video.downloader.presentation.screens.player.screen.PlayerRootSRC
+import com.video.downloader.presentation.screens.reels.screen.ReelsRootSRC
+import com.video.downloader.presentation.screens.vault.screen.VaultRootSRC
 import com.video.downloader.presentation.theme.AppColors
 
 @Composable
@@ -125,6 +130,7 @@ fun MainSRC(
             label = "MainTabContentAnimation"
         ) { selectedTab ->
             MainTabContent(
+                mainViewModel = viewModel,
                 paddingValues = paddingValues,
                 backStack = backStack,
                 selectedTab = selectedTab,
@@ -134,8 +140,10 @@ fun MainSRC(
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.Q)
 @Composable
 private fun MainTabContent(
+    mainViewModel: MainViewModel,
     paddingValues: PaddingValues,
     backStack: NavBackStack<NavKey>,
     selectedTab: BottomNavItems,
@@ -150,23 +158,53 @@ private fun MainTabContent(
                 HomeRootSRC(
                     mainPaddingValues = paddingValues,
                     backStack = backStack,
+                    toWatchReelsTriggered = {
+                        mainViewModel.onEvent(
+                            MainEvents.OnTabSelected(
+                                BottomNavItems.Reels
+                            )
+                        )
+                    }
                 )
             }
 
             BottomNavItems.Player -> {
-                Text(text = "Player screen")
+                PlayerRootSRC(
+                    mainViewModel = mainViewModel,
+                    mainPaddingValues = paddingValues,
+                    backStack = backStack,
+                )
             }
 
             BottomNavItems.Reels -> {
-                Text(text = "Reels screen")
+                ReelsRootSRC(
+                    mainViewModel = mainViewModel,
+                    mainPaddingValues = paddingValues,
+                    backStack = backStack,
+                )
             }
 
             BottomNavItems.Files -> {
-                Text(text = "File screen")
+                DownloadRootSRC(
+                    mainViewModel = mainViewModel,
+                    mainPaddingValues = paddingValues,
+                    backStack = backStack,
+                )
             }
 
             BottomNavItems.Vault -> {
-                Text(text = "Vault screen")
+                VaultRootSRC(
+                    mainPaddingValues = paddingValues,
+                    onNavigateHome = {
+                        mainViewModel.onEvent(
+                            MainEvents.OnTabSelected(
+                                BottomNavItems.Home
+                            )
+                        )
+                    },
+                    backStack = backStack,
+
+                )
             }
         }
     }

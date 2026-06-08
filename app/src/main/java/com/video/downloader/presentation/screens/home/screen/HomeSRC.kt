@@ -29,9 +29,10 @@ import com.video.downloader.presentation.screens.home.componants.HomeLinkCard
 import com.video.downloader.presentation.screens.home.componants.HomePlatformsSection
 import com.video.downloader.presentation.screens.home.componants.HomeTopBar
 import com.video.downloader.presentation.screens.home.componants.HomeTrendingReelsCard
+import com.video.downloader.presentation.screens.home.componants.NoInternetConnectionDialog
+import com.video.downloader.presentation.screens.home.componants.VideoFetchFailedDialog
 import com.video.downloader.presentation.screens.home.events.HomeEvents
 import com.video.downloader.presentation.screens.home.states.HomeStates
-import com.video.downloader.presentation.screens.home.viewModel.HomeViewModel
 import com.video.downloader.presentation.theme.AppColors
 import com.video.downloader.presentation.theme.AppGradients
 
@@ -82,7 +83,7 @@ fun HomeSRC(
 
             HomeLinkCard(
                 videoUrl = state.videoUrl,
-                isLoading = state.isLoading,
+                isLoading = state.isDownloadActionLoading,
                 error = state.error,
                 onVideoUrlChanged = { value ->
                     onEvent(HomeEvents.VideoUrlChanged(value))
@@ -153,6 +154,28 @@ fun HomeSRC(
                 modifier = Modifier.height(mainPaddingValues.calculateBottomPadding() + 10.dp)
             )
         }
+    }
+
+    if (state.showNoInternetDialog) {
+        NoInternetConnectionDialog(
+            onRetryClick = {
+                onEvent(HomeEvents.NoInternetRetryClicked)
+            },
+            onCancelClick = {
+                onEvent(HomeEvents.NoInternetCancelClicked)
+            }
+        )
+    }
+
+    if (state.showVideoFetchFailedDialog) {
+        VideoFetchFailedDialog(
+            onRetryClick = {
+                onEvent(HomeEvents.VideoFetchRetryClicked)
+            },
+            onCancelClick = {
+                onEvent(HomeEvents.VideoFetchCancelClicked)
+            }
+        )
     }
 
 }

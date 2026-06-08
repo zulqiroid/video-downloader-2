@@ -81,4 +81,54 @@
     <string name="general">General</string>
     <string name="downloads_storage"><![CDATA[DOWNLOADS & STORAGE]]></string>
     <string name="support">SUPPORT</string>
+    <string name="videos">Videos</string>
+    <string name="audios">Audios</string>
+    <string name="no_videos_found">No videos found</string>
+    <string name="your_downloaded_videos_will_appear_once_completed">Your downloaded videos will appear once completed.</string>
+    <string name="no_audios_found">No audios found</string>
+    <string name="your_downloaded_audios_will_appear_once_completed">Your downloaded audios will appear once completed.</string>
+
+
+    <string name="rename">Rename</string>
+    <string name="change_file_name">Change the file name</string>
+
+    <string name="move_to_vault">Move to Vault</string>
+    <string name="secure_with_pin">Secure with pin</string>
+
+    <string name="share">Share</string>
+    <string name="send_via_message">Send via message</string>
+
+    <string name="file_info">File info</string>
+    <string name="check_file_properties">Check file properties</string>
+
+    <string name="delete">Delete</string>
+    <string name="remove_file_permanently">Remove file permanently</string>
+    <string name="download_files">Download Files</string>
+    <string name="completed">Completed</string>
+    <string name="in_progress">In Progress</string>
+    <string name="no_trending_reels_available">No trending reels available</string>
+    <string name="check_back_later_for_the_latest_viral_shorts_and_trending_content">Check back later for the latest viral shorts and trending content.</string>
+    <string name="conversion_mode">CONVERSION MODE</string>
+    <string name="auto_recommended">Auto Recommended</string>
+    <string name="app_will_choose_best_balanced_quality">App will choose best balanced quality</string>
+    <string name="voice_lecture">Voice / Lecture</string>
+    <string name="_96_kbps_mono_small_size">96 kbps mono • small size</string>
+    <string name="high_quality">High Quality</string>
+    <string name="_192_kbps_stereo_larger_file">192 kbps stereo • larger file</string>
+    <string name="music_song">Music / Song</string>
+    <string name="_128_kbps_stereo_balanced">128 kbps stereo • balanced</string>
+    <string name="convert_to_mp3">Convert to MP3</string>
+    <string name="no_downloading_yet">No downloading yet</string>
+    <string name="no_downloads_yet">No downloads yet</string>
+    <string name="your_downloading_files_will_appear_once_starts">Your downloading files will appear once starts.</string>
+    <string name="your_downloaded_files_will_appear_once_completed">Your downloaded files will appear once completed.</string>
+    <string name="your_saved_files_will_appear_here_everything_is_encrypted_and_locked_away">Your saved files will appear here. Everything is encrypted and locked away.</string>
+    <string name="vault_is_secure_empty"><![CDATA[Vault is Secure & Empty]]></string>
+    <string name="securing_file">Securing File</string>
+    <string name="encrypting_your_media_and_saving_it_safely_inside_vault">Encrypting your media and saving it safely inside Vault.</string>
+    <string name="please_wait_do_not_close_the_app_while_the_file_is_being_secured">Please wait. Do not close the app while the file is being secured.</string>
+    <string name="your_file_remains_protected_a_temporary_playback_copy_is_prepared_only_inside_app_cache">Your file remains protected. A temporary playback copy is prepared only inside app cache.</string>
+    <string name="decrypting_your_vault_file_securely_and_preparing_playback">Decrypting your Vault file securely and preparing playback.</string>
+    <string name="opening_secure_media">Opening Secure Media</string>
+
 </resources>

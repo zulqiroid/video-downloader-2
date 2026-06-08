@@ -84,6 +84,7 @@ fun OnboardingSRC(
                 OnboardingNavEvents.NavigateNext -> {
                     onFinished()
                 }
+                else -> Unit
             }
         }
     }

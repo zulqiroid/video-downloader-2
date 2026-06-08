@@ -6,5 +6,7 @@ sealed interface OnboardingNavEvents {
 
     object NavigateNext : OnboardingNavEvents
 
+    object NavigateToMain: OnboardingNavEvents
+
 
 }

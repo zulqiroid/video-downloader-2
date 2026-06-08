@@ -15,6 +15,12 @@ sealed interface HomeEvents {
 
     data object DownloadClicked : HomeEvents
 
+    data object NoInternetRetryClicked : HomeEvents
+    data object NoInternetCancelClicked : HomeEvents
+
+    data object VideoFetchRetryClicked : HomeEvents
+    data object VideoFetchCancelClicked : HomeEvents
+
     data object WatchTrendingReelsClicked : HomeEvents
 
     data class PlatformClicked(
@@ -28,4 +34,6 @@ sealed interface HomeEvents {
     data object HowToDownloadVideosClicked : HomeEvents
 
     data object SettingClicked : HomeEvents
+
+
 }

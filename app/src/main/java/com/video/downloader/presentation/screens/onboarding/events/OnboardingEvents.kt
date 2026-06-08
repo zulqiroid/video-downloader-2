@@ -6,4 +6,6 @@ sealed interface OnboardingEvents {
 
     object NextClicked : OnboardingEvents
 
+    object FinishOnBoarding : OnboardingEvents
+
 }

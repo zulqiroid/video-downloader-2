@@ -17,6 +17,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.video.downloader.presentation.common.haptics.AppHapticType
 import com.video.downloader.presentation.common.haptics.hapticClickable
@@ -109,7 +110,9 @@ fun HomeFeatureItem(
 
             Text(
                 text =stringResource(feature.title),
-                style = AppTextStyles.caption
+                style = AppTextStyles.caption,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
             )
 
         }

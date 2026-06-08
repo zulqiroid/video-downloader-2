@@ -2,6 +2,7 @@ package com.video.downloader.presentation.screens.splash.screen
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -18,7 +19,7 @@ fun SplashRootSRC(
     backStack: NavBackStack<NavKey>,
     viewModel: SplashViewModel = hiltViewModel()
 ) {
-    val state = viewModel.state.collectAsStateWithLifecycle()
+    val state by viewModel.state.collectAsStateWithLifecycle()
     val lifecycleOwner = LocalLifecycleOwner.current
 
     LaunchedEffect(viewModel, lifecycleOwner.lifecycle) {
@@ -27,7 +28,11 @@ fun SplashRootSRC(
                 when (navEvent) {
                     SplashNavEvents.NavigateToMain -> {
                         backStack.removeLastOrNull()
-                        backStack.add(Screen.AppLanguage)
+                        if (state.isOnBoardingCompleted){
+                            backStack.add(Screen.Main)
+                        }else{
+                            backStack.add(Screen.AppLanguage)
+                        }
                     }
                 }
             }
@@ -35,7 +40,7 @@ fun SplashRootSRC(
     }
 
     SplashSRC(
-        state = state.value,
+        state = state,
         onEvent = viewModel::onEvent
     )
 }
