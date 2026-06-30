@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "819483913286",
+    "project_id": "video-downloader-c29c7",
+    "storage_bucket": "video-downloader-c29c7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819483913286:android:ca40fd372bdb99b5f5ae47",
+        "android_client_info": {
+          "package_name": "com.all.video.downloader.fast.hd.secure.video.downloader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_wJ88X13-4v8brnoA5yGfAVr26WoIXWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

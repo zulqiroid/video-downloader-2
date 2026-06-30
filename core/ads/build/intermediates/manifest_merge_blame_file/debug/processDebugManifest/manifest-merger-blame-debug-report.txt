@@ -1,0 +1,39 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.core.ads" >
+5
+6    <uses-sdk android:minSdkVersion="24" />
+6-->INJECTED
+6-->INJECTED
+7
+8    <!-- Ad loading ke liye internet chahiye -->
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:5:5-67
+9-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:5:22-64
+10
+11    <!-- Google Advertising ID ke liye (Android 13+ par zaroori) -->
+12    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+12-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:8:5-79
+12-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:8:22-76
+13
+14    <application>
+14-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:10:5-21:19
+15        <meta-data
+15-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:12:9-14:55
+16            android:name="com.google.android.gms.ads.APPLICATION_ID"
+16-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:13:13-69
+17            android:value="${ADMOB_APPLICATION_ID}" />
+17-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:14:13-52
+18
+19        <activity
+19-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:16:9-19:45
+20            android:name="com.google.android.gms.ads.AdActivity"
+20-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:17:13-65
+21            android:theme="@style/AdTheme"
+21-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:18:13-43
+22            tools:replace="android:theme" />
+22-->D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:19:13-42
+23    </application>
+24
+25</manifest>

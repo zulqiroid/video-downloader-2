@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.core.ads" >
+
+    <uses-sdk android:minSdkVersion="24" />
+
+    <!-- Ad loading ke liye internet chahiye -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Google Advertising ID ke liye (Android 13+ par zaroori) -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${ADMOB_APPLICATION_ID}" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:theme="@style/AdTheme"
+            tools:replace="android:theme" />
+    </application>
+
+</manifest>

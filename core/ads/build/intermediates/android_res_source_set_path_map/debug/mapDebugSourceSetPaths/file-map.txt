@@ -1,0 +1,8 @@
+com.core.ads-pngs-0 D:\VideoDownloader2\core\ads\build\generated\res\pngs\debug
+com.core.ads-updated_navigation_xml-1 D:\VideoDownloader2\core\ads\build\generated\updated_navigation_xml\debug
+com.core.ads-mergeDebugResources-2 D:\VideoDownloader2\core\ads\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.core.ads-mergeDebugResources-3 D:\VideoDownloader2\core\ads\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.core.ads-debug-4 D:\VideoDownloader2\core\ads\build\intermediates\merged_res\debug\mergeDebugResources
+com.core.ads-debug-5 D:\VideoDownloader2\core\ads\build\intermediates\packaged_res\debug\packageDebugResources
+com.core.ads-debug-6 D:\VideoDownloader2\core\ads\src\debug\res
+com.core.ads-main-7 D:\VideoDownloader2\core\ads\src\main\res

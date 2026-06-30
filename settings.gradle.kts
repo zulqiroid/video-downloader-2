@@ -19,9 +19,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://androidx.dev/snapshots/builds/1234567/artifacts/repository")
+        }
     }
 }
 
 rootProject.name = "Video Downloader"
 include(":app")
- 
+include(":core:ads")

@@ -130,5 +130,60 @@
     <string name="your_file_remains_protected_a_temporary_playback_copy_is_prepared_only_inside_app_cache">Your file remains protected. A temporary playback copy is prepared only inside app cache.</string>
     <string name="decrypting_your_vault_file_securely_and_preparing_playback">Decrypting your Vault file securely and preparing playback.</string>
     <string name="opening_secure_media">Opening Secure Media</string>
+    <string name="change_the_file_name">Change the file name</string>
+    <string name="cancel_download">Cancel Download</string>
+    <string name="remove_downloading">Remove downloading</string>
+    <string name="pause_download">Pause Download</string>
+    <string name="stop_downloading">Stop downloading</string>
+    <string name="resume_download">Resume Download</string>
+    <string name="continue_downloading">Continue downloading</string>
+    <string name="retry_download">Retry Download</string>
+    <string name="try_downloading_again">Try downloading again</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="feedback">Feedback</string>
+
+
+    <string name="media_player_options_title">Player options</string>
+    <string name="media_player_playback_speed_title">Playback speed</string>
+    <string name="media_player_playback_speed_current">Current speed: %1$s</string>
+    <string name="media_player_playback_speed_subtitle">Choose how fast this media should play.</string>
+    <string name="media_player_playback_speed_reset">Reset to normal speed</string>
+
+
+    <string name="media_player_equalizer_title">Equalizer</string>
+    <string name="media_player_equalizer_subtitle">Fine tune audio frequencies and bass boost.</string>
+    <string name="media_player_equalizer_status_on">On</string>
+    <string name="media_player_equalizer_status_off">Off</string>
+    <string name="media_player_equalizer_enabled_title">Enable equalizer</string>
+    <string name="media_player_equalizer_enabled_subtitle">Apply custom sound effects to current playback.</string>
+    <string name="media_player_equalizer_presets_title">Presets</string>
+    <string name="media_player_equalizer_bands_title">Frequency bands</string>
+    <string name="media_player_equalizer_bass_boost_title">Bass boost</string>
+    <string name="media_player_equalizer_not_supported">Equalizer is not supported on this device or this audio session is not ready yet.</string>
+
+
+    <string name="media_player_subtitle_title">Subtitles</string>
+    <string name="media_player_subtitle_subtitle">Choose subtitle track for this video.</string>
+    <string name="media_player_subtitle_status_on">On</string>
+    <string name="media_player_subtitle_status_off">Off</string>
+    <string name="media_player_subtitle_status_available">%1$d found</string>
+    <string name="media_player_subtitle_off_title">Subtitles off</string>
+    <string name="media_player_subtitle_off_subtitle">Play this video without captions.</string>
+    <string name="media_player_subtitle_no_tracks">No matching subtitle file was found in this video folder.</string>
+    <string name="media_player_subtitle_pick_file_title">Pick subtitle file</string>
+    <string name="media_player_subtitle_pick_file_subtitle">Select .srt, .vtt, .ass, .ssa, or .ttml from storage.</string>
+    <string name="media_player_pip_action_previous">Previous</string>
+    <string name="media_player_pip_action_pause">Pause</string>
+    <string name="media_player_pip_action_play">Play</string>
+    <string name="media_player_pip_action_next">Next</string>
+    <string name="media_player_foreground_title">Audio is playing</string>
+    <string name="media_player_foreground_subtitle">Playing in background</string>
+    <string name="media_player_foreground_channel_name">Audio playback</string>
+    <string name="media_player_foreground_channel_description">Keeps audio playback active in background.</string>
+    <string name="media_player_foreground_action_previous">Previous</string>
+    <string name="media_player_foreground_action_pause">Pause</string>
+    <string name="media_player_foreground_action_play">Play</string>
+    <string name="media_player_foreground_action_next">Next</string>
+    <string name="media_player_foreground_action_stop">Stop</string>
 
 </resources>

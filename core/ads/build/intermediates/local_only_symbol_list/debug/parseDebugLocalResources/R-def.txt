@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+id ad_advertiser
+id ad_badge
+id ad_body
+id ad_call_to_action
+id ad_headline
+id ad_icon
+id ad_media
+id ad_native_root
+id ad_price
+id ad_star_rating
+id ad_store
+layout ad_native_default
+layout ad_native_full_page
+layout ad_native_medium
+layout ad_native_small
+style AdTheme

@@ -4,10 +4,12 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt.android)
+
+    alias(libs.plugins.google.services)
 }
 
 android {
-    namespace = "com.video.downloader"
+    namespace = "com.all.video.downloader.fast.hd.secure.video.downloader"
 
     compileSdk {
         version = release(36) {
@@ -22,7 +24,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.video.downloader"
+        applicationId = "com.all.video.downloader.fast.hd.secure.video.downloader"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -36,7 +38,7 @@ android {
             }
         }
 
-        buildConfigField(
+  /*      buildConfigField(
             type = "String",
             name = "DOWNLOADER_BASE_URL",
             value = "\"https://testingdownloader.totalfreeai.com/\""
@@ -46,7 +48,16 @@ android {
             type = "String",
             name = "DOWNLOADER_SECRET_KEY",
             value = "\"I3V1T9kAd7iD0jg7ITqQLgjcZC1Nv7cyO3WZILtHsYhXVumkPj\""
-        )
+        )*/
+
+        //test id
+      /*  manifestPlaceholders["ADMOB_APPLICATION_ID"] =
+            "ca-app-pub-3940256099942544~3347511713"*/
+
+
+        //real admob id
+        manifestPlaceholders["ADMOB_APPLICATION_ID"] =
+            "ca-app-pub-3484666557551870~5506879050"
     }
 
     buildTypes {
@@ -84,6 +95,22 @@ android {
 }
 
 dependencies {
+
+    implementation(project(":core:ads"))
+
+    /**
+     * Google Play Billing
+     */
+    implementation(libs.google.play.billing)
+
+    /**
+     * Firebase
+     */
+    implementation(platform(libs.firebase.bom))
+     implementation(libs.firebase.analytics)
+    implementation(libs.firebase.config)
+    implementation(libs.kotlinx.coroutines.play.services)
+
     /**
      * Core Android
      */
@@ -177,6 +204,7 @@ dependencies {
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.ui)
     implementation(libs.androidx.media3.session)
+    implementation(libs.androidx.media)
 
     /**
      * Logging
@@ -216,6 +244,15 @@ dependencies {
      */
     implementation("io.coil-kt:coil-compose:2.7.0")
     implementation("io.coil-kt:coil-video:2.7.0")
+
+
+    /**
+     * koin
+     */
+    implementation(platform(libs.koin.bom))
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
 
 
     implementation(libs.androidx.biometric)

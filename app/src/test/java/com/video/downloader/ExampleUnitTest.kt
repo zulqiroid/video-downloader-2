@@ -1,4 +1,4 @@
-package com.video.downloader
+package com.all.video.downloader.fast.hd.secure.video.downloader
 
 import org.junit.Test
 

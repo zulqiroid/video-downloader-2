@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Optional Native Ad asset IDs.
+         These may not exist in every layout, but code can safely reference them. -->
+
+    <item
+        name="ad_star_rating"
+        type="id" />
+
+    <item
+        name="ad_store"
+        type="id" />
+
+    <item
+        name="ad_price"
+        type="id" />
+
+    <item
+        name="ad_advertiser"
+        type="id" />
+
+    <item
+        name="ad_badge"
+        type="id" />
+
+</resources>

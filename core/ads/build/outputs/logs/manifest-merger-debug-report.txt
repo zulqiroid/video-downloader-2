@@ -1,0 +1,42 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:1:1-25:12
+	package
+		INJECTED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:5:22-64
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:8:22-76
+application
+ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:10:5-21:19
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:12:9-14:55
+	android:value
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:14:13-52
+	android:name
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:13:13-69
+activity#com.google.android.gms.ads.AdActivity
+ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:16:9-19:45
+	android:theme
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:18:13-43
+	tools:replace
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:19:13-42
+	android:name
+		ADDED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml:17:13-65
+uses-sdk
+INJECTED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml
+INJECTED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\VideoDownloader2\core\ads\src\main\AndroidManifest.xml

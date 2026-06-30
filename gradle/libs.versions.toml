@@ -6,6 +6,9 @@ fragmentKtx = "1.8.9"
 kotlin = "2.3.21"
 ksp = "2.3.4"
 
+firebaseBom = "34.7.0"
+googleServices = "4.4.4"
+
 coreKtx = "1.18.0"
 activityCompose = "1.13.0"
 lifecycle = "2.10.0"
@@ -36,6 +39,17 @@ mockk = "1.14.9"
 turbine = "1.2.1"
 archCoreTesting = "2.2.0"
 material = "1.14.0"
+appcompat = "1.7.1"
+
+
+koin-bom = "4.2.1"
+foundation = "1.11.2"
+
+
+billing = "9.0.0"
+billingKtx = "9.0.0"
+
+androidxMedia = "1.7.1"
 
 
 [libraries]
@@ -119,10 +133,34 @@ mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
 androidx-arch-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "archCoreTesting" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
+
+#koin
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin-bom" }
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
+koin-compose = { module = "io.insert-koin:koin-compose" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel" }
+koin-ktor = { module = "io.insert-koin:koin-ktor" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "foundation" }
+
+
+# Firebase
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firebase-config = { group = "com.google.firebase", name = "firebase-config" }
+kotlinx-coroutines-play-services = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutines" }
+
+google-play-billing = { group = "com.android.billingclient", name = "billing", version.ref = "billing" }
+billing-ktx = { group = "com.android.billingclient", name = "billing-ktx", version.ref = "billingKtx" }
+
+androidx-media = { group = "androidx.media", name = "media", version.ref = "androidxMedia" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
 
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
@@ -131,3 +169,5 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }

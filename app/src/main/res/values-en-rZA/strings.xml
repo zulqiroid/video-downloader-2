@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Video Downloader</string>
+    <string name="video">Video</string>
+    <string name="downloader">" Downloader"</string>
+    <string name="easily_download_videos_play"><![CDATA[Easily download and play videos]]></string>
+    <string name="get_started">Get Started</string>
+    <string name="this_app_may_contains_ads">This app may contain ads</string>
+
+    <string name="english">English</string>
+    <string name="urdu">Urdu</string>
+    <string name="german">German</string>
+    <string name="hindi">Hindi</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="russian">Russian</string>
+    <string name="south_africa">South Africa</string>
+    <string name="persian">Persian</string>
+    <string name="italic">Italian</string>
+
+    <string name="apply_language">Apply Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="search_language">Search language...</string>
+
+    <string name="unlimited_downloads">Unlimited Downloads</string>
+    <string name="save_videos_from_all_your_favorite_platforms_without_limits">Save videos from all your favourite platforms without limits.</string>
+    <string name="discover_and_download_the_latest_trending_reels_instantly">Discover and download the latest trending reels instantly.</string>
+    <string name="trending_reels">Trending Reels</string>
+    <string name="play_your_downloads_offline_with_a_reels_like_built_in_player">Play your downloads offline with a reels-style built-in player.</string>
+    <string name="built_in_player">Built-in Player</string>
+    <string name="private_vault">Private Vault</string>
+    <string name="protect_your_downloads_with_pin_or_biometric_security">Protect your downloads with PIN or biometric security.</string>
+
+    <string name="skip">Skip</string>
+    <string name="continue_text">Continue</string>
+    <string name="next">Next</string>
+    <string name="user_friendly_download_engine">User-friendly download engine.</string>
+
+    <string name="home">Home</string>
+    <string name="player">Player</string>
+    <string name="reels">Reels</string>
+    <string name="files">Files</string>
+    <string name="vault">Vault</string>
+    <string name="pro">PRO</string>
+
+    <string name="paste">Paste</string>
+    <string name="download">Download</string>
+    <string name="paste_video_link_here">Paste video link here...</string>
+
+    <string name="watch_trending_reels">Watch Trending Reels</string>
+    <string name="discover_the_latest_viral_shorts">Discover the latest viral shorts.</string>
+
+    <string name="tokitok">TokiTok</string>
+    <string name="fesbuk">Fesbuk</string>
+    <string name="intgame">Intgame</string>
+    <string name="likeir">Likeir</string>
+    <string name="dailymutin">Dailymutin</string>
+    <string name="thireds">Thireds</string>
+    <string name="pinitrust">Pinitrust</string>
+    <string name="twetzer">Twetzer</string>
+
+    <string name="platforms">Platforms</string>
+    <string name="how_to_download_videos">How to Download Videos</string>
+    <string name="video_splitter">Video Splitter</string>
+    <string name="screen_casting">Screen Casting</string>
+    <string name="video_to_mp3">Video to MP3</string>
+
+    <string name="download_guide_subtitle">Follow these 3 simple steps to save your favourite content in high quality.</string>
+
+    <string name="copy_link">Copy Link</string>
+    <string name="copy_link_description">Find the video you want to save and copy its URL from the share menu.</string>
+
+    <string name="paste_link">Paste Link</string>
+    <string name="paste_link_description">Return to this app and paste the copied link into the input field.</string>
+
+    <string name="download_description">Tap the download button and save the media directly to your device.</string>
+
+    <string name="try_now">Try Now</string>
+    <string name="download_video">Download Video</string>
+    <string name="no_trending_videos">No Trending Videos</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="see_all">See All</string>
+
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_app">Share App</string>
+    <string name="download_location">Download Location</string>
+    <string name="downloads_videosaver">/Downloads/VideoSaver</string>
+    <string name="notifications">Notifications</string>
+    <string name="download_guide">Download Guide</string>
+
+    <string name="general">General</string>
+    <string name="downloads_storage"><![CDATA[DOWNLOADS & STORAGE]]></string>
+    <string name="support">SUPPORT</string>
+
+    <string name="videos">Videos</string>
+    <string name="audios">Audios</string>
+    <string name="no_videos_found">No videos found</string>
+    <string name="your_downloaded_videos_will_appear_once_completed">Your downloaded videos will appear here once completed.</string>
+    <string name="no_audios_found">No audios found</string>
+    <string name="your_downloaded_audios_will_appear_once_completed">Your downloaded audios will appear here once completed.</string>
+
+    <string name="rename">Rename</string>
+    <string name="change_file_name">Change the file name</string>
+
+    <string name="move_to_vault">Move to Vault</string>
+    <string name="secure_with_pin">Secure with PIN</string>
+
+    <string name="share">Share</string>
+    <string name="send_via_message">Send via message</string>
+
+    <string name="file_info">File Info</string>
+    <string name="check_file_properties">Check file properties</string>
+
+    <string name="delete">Delete</string>
+    <string name="remove_file_permanently">Remove file permanently</string>
+
+    <string name="download_files">Downloaded Files</string>
+    <string name="completed">Completed</string>
+    <string name="in_progress">In Progress</string>
+
+    <string name="no_trending_reels_available">No trending reels available</string>
+    <string name="check_back_later_for_the_latest_viral_shorts_and_trending_content">Check back later for the latest viral shorts and trending content.</string>
+
+    <string name="conversion_mode">CONVERSION MODE</string>
+    <string name="auto_recommended">Auto Recommended</string>
+    <string name="app_will_choose_best_balanced_quality">The app will choose the best balanced quality automatically</string>
+
+    <string name="voice_lecture">Voice / Lecture</string>
+    <string name="_96_kbps_mono_small_size">96 kbps mono • small size</string>
+
+    <string name="high_quality">High Quality</string>
+    <string name="_192_kbps_stereo_larger_file">192 kbps stereo • larger file</string>
+
+    <string name="music_song">Music / Song</string>
+    <string name="_128_kbps_stereo_balanced">128 kbps stereo • balanced</string>
+
+    <string name="convert_to_mp3">Convert to MP3</string>
+
+    <string name="no_downloading_yet">No downloads in progress yet</string>
+    <string name="no_downloads_yet">No downloads yet</string>
+    <string name="your_downloading_files_will_appear_once_starts">Your downloading files will appear here once they start.</string>
+    <string name="your_downloaded_files_will_appear_once_completed">Your downloaded files will appear here once completed.</string>
+
+    <string name="your_saved_files_will_appear_here_everything_is_encrypted_and_locked_away">Your saved files will appear here. Everything is encrypted and securely locked away.</string>
+    <string name="vault_is_secure_empty"><![CDATA[Vault is Secure & Empty]]></string>
+
+    <string name="securing_file">Securing File</string>
+    <string name="encrypting_your_media_and_saving_it_safely_inside_vault">Encrypting your media and saving it safely inside Vault.</string>
+    <string name="please_wait_do_not_close_the_app_while_the_file_is_being_secured">Please wait. Do not close the app while the file is being secured.</string>
+
+    <string name="your_file_remains_protected_a_temporary_playback_copy_is_prepared_only_inside_app_cache">Your file remains protected. A temporary playback copy is prepared only inside the app cache.</string>
+    <string name="decrypting_your_vault_file_securely_and_preparing_playback">Decrypting your Vault file securely and preparing playback.</string>
+    <string name="opening_secure_media">Opening Secure Media</string>
+
+    <string name="change_the_file_name">Change the file name</string>
+
+    <string name="cancel_download">Cancel Download</string>
+    <string name="remove_downloading">Remove downloading file</string>
+
+    <string name="pause_download">Pause Download</string>
+    <string name="stop_downloading">Stop downloading</string>
+
+    <string name="resume_download">Resume Download</string>
+    <string name="continue_downloading">Continue downloading</string>
+
+    <string name="retry_download">Retry Download</string>
+    <string name="try_downloading_again">Try downloading again</string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="feedback">Feedback</string>
+
+
+    <string name="media_player_options_title">Player options</string>
+    <string name="media_player_playback_speed_title">Playback speed</string>
+    <string name="media_player_playback_speed_current">Current speed: %1$s</string>
+    <string name="media_player_playback_speed_subtitle">Choose how fast this media should play.</string>
+    <string name="media_player_playback_speed_reset">Reset to normal speed</string>
+
+    <string name="media_player_equalizer_title">Equalizer</string>
+    <string name="media_player_equalizer_subtitle">Fine tune audio frequencies and bass boost.</string>
+    <string name="media_player_equalizer_status_on">On</string>
+    <string name="media_player_equalizer_status_off">Off</string>
+    <string name="media_player_equalizer_enabled_title">Enable equalizer</string>
+    <string name="media_player_equalizer_enabled_subtitle">Apply custom sound effects to current playback.</string>
+    <string name="media_player_equalizer_presets_title">Presets</string>
+    <string name="media_player_equalizer_bands_title">Frequency bands</string>
+    <string name="media_player_equalizer_bass_boost_title">Bass boost</string>
+    <string name="media_player_equalizer_not_supported">Equalizer is not supported on this device or this audio session is not ready yet.</string>
+
+    <string name="media_player_subtitle_title">Subtitles</string>
+    <string name="media_player_subtitle_subtitle">Choose subtitle track for this video.</string>
+    <string name="media_player_subtitle_status_on">On</string>
+    <string name="media_player_subtitle_status_off">Off</string>
+    <string name="media_player_subtitle_status_available">%1$d found</string>
+    <string name="media_player_subtitle_off_title">Subtitles off</string>
+    <string name="media_player_subtitle_off_subtitle">Play this video without captions.</string>
+    <string name="media_player_subtitle_no_tracks">No matching subtitle file was found in this video folder.</string>
+    <string name="media_player_subtitle_pick_file_title">Pick subtitle file</string>
+    <string name="media_player_subtitle_pick_file_subtitle">Select .srt, .vtt, .ass, .ssa, or .ttml from storage.</string>
+    <string name="media_player_pip_action_previous">Previous</string>
+    <string name="media_player_pip_action_pause">Pause</string>
+    <string name="media_player_pip_action_play">Play</string>
+    <string name="media_player_pip_action_next">Next</string>
+    <string name="media_player_foreground_title">Audio is playing</string>
+    <string name="media_player_foreground_subtitle">Playing in background</string>
+    <string name="media_player_foreground_channel_name">Audio playback</string>
+    <string name="media_player_foreground_channel_description">Keeps audio playback active in background.</string>
+    <string name="media_player_foreground_action_previous">Previous</string>
+    <string name="media_player_foreground_action_pause">Pause</string>
+    <string name="media_player_foreground_action_play">Play</string>
+    <string name="media_player_foreground_action_next">Next</string>
+    <string name="media_player_foreground_action_stop">Stop</string>
+</resources>
